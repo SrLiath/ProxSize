@@ -82,32 +82,6 @@ proxserver.exe
 | TCP Subdomain (SSH)| proxsize.exe -subdomain "git=tcp://192.168.1.10:22" |
 | Domain       | proxsize.exe -domain "example.com=http://localhost:3001"   |
 
-### List Rules
-
-```bash
-go run main.go -list
-```
-
-### Add Allowed Port
-
-```bash
-go run main.go -port 2222
-```
-
-### Remove Port
-
-```bash
-go run main.go -remove "port=2222"
-```
-
-### Remove Specific Rule
-
-```bash
-go run main.go -remove "subdomain=git"
-```
-
----
-
 ## 🧾 Example `proxies.json`
 
 ```json
